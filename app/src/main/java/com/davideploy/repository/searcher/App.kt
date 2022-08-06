@@ -1,4 +1,4 @@
-package com.davideploy.repositories
+package com.davideploy.repository.searcher
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
@@ -12,6 +12,5 @@ class App : Application() {
         startKoin {
             androidContext(this@App)
         }
-
     }
 }

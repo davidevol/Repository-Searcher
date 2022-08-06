@@ -1,4 +1,4 @@
-package com.davideploy.repositories.core
+package com.davideploy.repository.searcher.core
 
 import kotlinx.coroutines.flow.Flow
 

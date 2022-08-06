@@ -1,8 +1,8 @@
-package com.davideploy.repositories.ui
+package com.davideploy.repository.searcher.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.davideploy.repositories.databinding.ActivityMainBinding
+import com.davideploy.repository.searcher.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

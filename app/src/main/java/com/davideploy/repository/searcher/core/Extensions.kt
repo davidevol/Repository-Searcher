@@ -1,4 +1,4 @@
-package com.davideploy.repositories.core
+package com.davideploy.repository.searcher.core
 
 import android.app.Activity
 import android.content.Context
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ProgressBar
 import androidx.appcompat.app.AlertDialog
-import com.davideploy.repositories.R
+import com.davideploy.repository.searcher.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.textfield.TextInputLayout
 
