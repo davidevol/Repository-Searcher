@@ -11,15 +11,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/widget_repo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackgroundBorderless">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_owner"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ImageContrastCheck"
@@ -54,15 +54,18 @@
             android:id="@+id/chip_star"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/layout_half_padding"
+            android:layout_marginBottom="@dimen/layout_half_padding"
+            android:clickable="false"
+            android:padding="@dimen/layout_half_padding"
+            android:textSize="12sp"
             app:chipBackgroundColor="@color/white"
             app:chipIcon="@drawable/ic_stars"
             app:chipIconTint="#FAFA02"
-            android:clickable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tv_repo_name"
             app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
-            tools:text="Contador Estrelas" />
+            tools:text="100" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_repo_language"

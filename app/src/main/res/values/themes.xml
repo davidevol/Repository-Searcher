@@ -1,6 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.RepositorySearcher" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/teal</item>
-        <item name="colorPrimaryDark">@color/teal</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_main</item>
+        <item name="colorPrimaryVariant">@color/teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_A700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 </resources>
