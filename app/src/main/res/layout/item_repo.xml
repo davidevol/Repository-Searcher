@@ -9,8 +9,12 @@
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/widget_repo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_owner"
@@ -18,6 +22,7 @@
             android:layout_height="90dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck"
             tools:srcCompat="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -49,9 +54,12 @@
             android:id="@+id/chip_star"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
             app:chipBackgroundColor="@color/white"
             app:chipIcon="@drawable/ic_stars"
             app:chipIconTint="#FAFA02"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tv_repo_name"
             app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
             tools:text="Contador Estrelas" />
